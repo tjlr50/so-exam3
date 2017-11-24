@@ -3,10 +3,10 @@
 **Curso:** Sistemas Operativos  
 **Docente:** Daniel Barragán C.  
 **Tema:** Descubrimiento de servicios, Microservicios  
-**Correo:** daniel.barragan at correo.icesi.edu.co
-**Estudiante:** Juan Camilo Swan
-**Código:** A00054620
-**Correo:** juan.swan at correo.icesi.edu.co
+**Correo:** daniel.barragan at correo.icesi.edu.co  
+**Estudiante:** Juan Camilo Swan  
+**Código:** A00054620  
+**Correo:** juan.swan at correo.icesi.edu.co  
 
 ### Objetivos
 * Implementar servicios web que puedan ser consumidos por usuarios o aplicaciones
