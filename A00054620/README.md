@@ -275,20 +275,20 @@ Dicha implementación puede ser directamente o se puede implementar un API-Gatew
 
 ### Referencias
 https://github.com/ICESI/so-microservices-python  
-http://microservices.io/patterns/microservices.html
-https://www.upcloud.com/support/haproxy-load-balancer-centos/
-https://github.com/ICESI/so-discovery-service/blob/master/README.md
-http://sirile.github.io/2015/05/18/using-haproxy-and-consul-for-dynamic-service-discovery-on-docker.html
-https://es.wikipedia.org/wiki/Balanceador_de_carga
+http://microservices.io/patterns/microservices.html  
+https://www.upcloud.com/support/haproxy-load-balancer-centos/  
+https://github.com/ICESI/so-discovery-service/blob/master/README.md  
+http://sirile.github.io/2015/05/18/using-haproxy-and-consul-for-dynamic-service-discovery-on-docker.html  
+https://es.wikipedia.org/wiki/Balanceador_de_carga  
 
 [1]: images/1.png
-[2]: images/2.png
-[3]: images/3.png
-[4]: images/4.png
-[5]: images/5.jpg
-[6]: images/6.png
-[7]: images/7.png
-[8]: images/8.png
+[2]: images/2.PNG
+[3]: images/3.PNG
+[4]: images/4.PNG
+[5]: images/5.JPG
+[6]: images/6.PNG
+[7]: images/7.PNG
+[8]: images/8.PNG
 [9]: images/9.png
 [10]: images/10.png
 [11]: images/11.png
