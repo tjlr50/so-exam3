@@ -178,7 +178,6 @@ Finalmente, para automatizar esta función se configura el consul template al mi
 
 
 
-[8]:8.PNG
 
 [1]: 1.PNG
 
@@ -194,17 +193,17 @@ Finalmente, para automatizar esta función se configura el consul template al mi
 
 [7]: 7.PNG
 
-[8]: 8.PNG
+[8]: 8.png
 
-[9]: 9.PNG
+[9]: 9.png
 
-[10]: 10.PNG
+[10]: 10.png
 
-[11]: 11.PNG
+[11]: 11.png
 
-[13]: 13.PNG
+[13]: 13.png
 
 [14]: 14.PNG
 
-[15]: 15.PNG
+[15]: 15.png
 
