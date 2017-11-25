@@ -19,6 +19,7 @@ Para el despliegue del esquema mosrado en la figura, fue necesirario implementar
 
 
 Al comenzar, para los servidores se debe crear el servicio, ejecutando un agente consul. Para conseguir un funcionnamiento optimo, se requieren las siguientes instalaciones.
+
 ![][1]
 
 ```
@@ -69,7 +70,9 @@ $ consul agent -data-dir=/etc/consul/data -node=agent-one \ -bind=Mi_IP -enable-
 $ consul join IP_DiscoveryService
 ```
 
-![2] ![4] 
+![][2] 
+![][4]
+ 
 
 Para continuar con el descubridor de servicios, se debe realizar la siguiente instalación:
 
@@ -98,7 +101,9 @@ Para la imprementación de los servicios, sSe procede a crear el consul user y h
 
 Se continúa con el descubridor de servicios, el cual requiere un consul server (quien administra los clientes), que se ejecuta de la siguiente forma:
 
-![5] ![6]
+![][5] 
+![][6]
+
 
 Se inicia el consul server
 
@@ -111,7 +116,7 @@ $ consul agent -server -bootstrap-expect=1 \
 
 Se muestran los consul members del descubridor de servicios
 
-![7]
+![][7]
 
 
 Para asignar un servidor a una determinada solicitud de cliente, se configura un balanceador de carga a través de la instalación de HAProxy y la configuracion del archivo haproxy.cfg
@@ -141,26 +146,23 @@ $ sudo vi /etc/haproxy/haproxy.cfg
 $ sudo systemctl restart haproxy
 ```
 
-![8] ![9]
+![][8]
+![][9]
 
 Finalmente, para automatizar esta función se configura el consul template al microservisio con su IP correspondiente.
 
-![10]
+![][10]
 
 
+4. Al tener varios microservicios al tiempo, el balanceador de cargas, por medio del llamando round robin, que recorre las solicitudes de clientes, asignando un respectivo servidor, uno tras otro, para mantener en lo posible un número de servicios asignados a cada servidor. 
 
-4.
+![][11]
 
+![][13]
 
+![][15]
 
-
-
-
-
-
-
-
-
+5. SI lo que se busca es una escalabilidad para futuros posibles servicios asociables, con el fin de conseguir un manejo autónomo del sistema, recomendaría implementar un API GATEWAY, de tal forma que los servicios accedan a este en busca de un microservicio y consuman el API respectivo. Con esto se obtendría un sistema de gran atonomía y escalabilidad a nuevos microservicios.
 
 
 
@@ -169,20 +171,41 @@ Finalmente, para automatizar esta función se configura el consul template al mi
 
 
 
-[1]1.PNG
-
-[2]2.PNG
-
-[2]2.PNG
-
-[3]3.PNG
-
-[4]4.PNG
-
-[5]5.PNG
 
 
-[6]6.PNG
 
 
-[7]7.PNG
+
+[1]: 1.PNG
+
+[2]: 2.PNG
+
+[3]: 3.PNG
+
+[4]: 4.PNG
+
+[5]: 5.PNG
+
+
+[6]: 6.PNG
+
+
+[7]: 7.PNG
+
+
+[8]: 8.PNG
+
+
+[9]: 9.PNG
+
+
+[10]: 10.PNG
+
+
+[11]: 11.PNG
+
+[13]: 13.PNG
+
+[14]: 14.PNG
+
+[15]: 15.PNG
