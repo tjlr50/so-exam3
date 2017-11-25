@@ -71,6 +71,7 @@ $ consul join IP_DiscoveryService
 ```
 
 ![][2] 
+
 ![][4]
  
 
@@ -102,6 +103,7 @@ Para la imprementación de los servicios, sSe procede a crear el consul user y h
 Se continúa con el descubridor de servicios, el cual requiere un consul server (quien administra los clientes), que se ejecuta de la siguiente forma:
 
 ![][5] 
+
 ![][6]
 
 
@@ -147,9 +149,11 @@ $ sudo systemctl restart haproxy
 ```
 
 ![][8]
+
 ![][9]
 
 Finalmente, para automatizar esta función se configura el consul template al microservisio con su IP correspondiente.
+
 
 ![][10]
 
@@ -174,7 +178,7 @@ Finalmente, para automatizar esta función se configura el consul template al mi
 
 
 
-
+[8]:8.PNG
 
 [1]: 1.PNG
 
@@ -186,21 +190,15 @@ Finalmente, para automatizar esta función se configura el consul template al mi
 
 [5]: 5.PNG
 
-
 [6]: 6.PNG
-
 
 [7]: 7.PNG
 
-
 [8]: 8.PNG
-
 
 [9]: 9.PNG
 
-
 [10]: 10.PNG
-
 
 [11]: 11.PNG
 
@@ -209,3 +207,4 @@ Finalmente, para automatizar esta función se configura el consul template al mi
 [14]: 14.PNG
 
 [15]: 15.PNG
+
