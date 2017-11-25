@@ -185,7 +185,7 @@ Finalmente, para automatizar esta función se configura el consul template al mi
 
 [3]: 3.PNG
 
-[4]: 4.PNG
+[4]: 4.JPG
 
 [5]: 5.PNG
 
